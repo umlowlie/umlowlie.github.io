@@ -1,2 +1,2 @@
 # umlowlie.github.io
-Tecnical Domen
+Technical Domain
