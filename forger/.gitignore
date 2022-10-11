@@ -1,9 +1,0 @@
-$ cat .gitignore
-*.[oa]
-*~
-.sass-cache/
-*.sass
-*.scss
-*.css.map
-*.sass.map
-*.scss.map
