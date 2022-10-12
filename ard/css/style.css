@@ -90,6 +90,8 @@ header .menu-nav ul li a {
   line-height: 15px;
   color: #111111;
   text-decoration: none;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
 }
 header .menu-nav ul li a:hover {
   color: #11AAC3;
@@ -123,6 +125,8 @@ header .menu-lang ul li a {
   color: #111111;
   text-decoration: none;
   padding-bottom: 3px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
 }
 header .menu-lang ul li a:hover {
   color: #11AAC3;
@@ -211,6 +215,8 @@ footer .menu-nav ul li a {
   line-height: 15px;
   color: #111111;
   text-decoration: none;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
 }
 footer .menu-nav ul li a:hover {
   color: #11AAC3;
@@ -420,18 +426,6 @@ footer .menu-nav ul li a.active {
   header .menu-nav ul li:last-child {
     padding: 0 0 0 0;
   }
-  header .menu-nav ul li a {
-    font-size: 15px;
-    line-height: 15px;
-    color: #111111;
-    text-decoration: none;
-  }
-  header .menu-nav ul li a:hover {
-    color: #11AAC3;
-  }
-  header .menu-nav ul li a.active {
-    color: #11AAC3;
-  }
   header .menu-lang ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -451,19 +445,6 @@ footer .menu-nav ul li a.active {
   }
   header .menu-lang ul li:last-child {
     padding: 0;
-  }
-  header .menu-lang ul li a {
-    font-size: 15px;
-    line-height: 15px;
-    color: #111111;
-    text-decoration: none;
-    padding-bottom: 3px;
-  }
-  header .menu-lang ul li a:hover {
-    color: #11AAC3;
-  }
-  header .menu-lang ul li a.active {
-    border-bottom: 2px solid #11AAC3;
   }
   header .button-mobile {
     position: absolute;
