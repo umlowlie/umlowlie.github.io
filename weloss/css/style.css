@@ -1,0 +1,1404 @@
+@import "animate.css";
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
+
+/*========================================================
+                    Main layout styles
+=========================================================*/
+body {
+    font: 300 14px/22px "Ubuntu", sans-serif;
+    color: #595959;
+    background: #ffffff;
+}
+
+body p {
+    letter-spacing: .04em;
+}
+
+a[href^="tel:"] {
+    color: inherit;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #f05758;
+}
+
+img {
+    max-width: 100%;
+}
+
+* {
+    -webkit-text-size-adjust: none;
+}
+
+/* ======= Headers ======= */
+h2 {
+    font: 500 60px/60px "Ubuntu", sans-serif;
+    color: #2d2b2c;
+}
+
+@media (max-width: 1199px) {
+    h2 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
+
+h3 {
+    font: 500 24px/26px "Ubuntu", sans-serif;
+    color: #2d2b2c;
+}
+
+@media (max-width: 979px) {
+    h3 {
+        font-size: 20px;
+    }
+}
+
+h4 {
+    font: 500 36px/36px "Ubuntu", sans-serif;
+    color: #8c3534;
+}
+
+h5 {
+    font: 500 30px/30px "Ubuntu", sans-serif;
+    color: #ffffff;
+}
+
+h6 {
+    font: 500 18px/24px "Ubuntu", sans-serif;
+    color: #2d2b2c;
+}
+
+.heading1 {
+    margin-bottom: 42px;
+}
+
+/* ======= Buttons ======= */
+.btn-simple {
+    font: 300 9px/22px "Ubuntu", sans-serif;
+    color: #2d2b2c;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 0.1em;
+}
+
+.btn-simple.btn-simple__inset1 {
+    text-decoration: underline;
+    color: #8c3534;
+}
+
+.btn-big {
+    display: inline-block;
+    font: 300 10px/10px "Ubuntu", sans-serif;
+    color: #3b424b;
+    background: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 32px 44px 30px;
+}
+
+.btn-big.btn-big__inset1 {
+    background: #f05758;
+    color: #ffffff;
+}
+
+.btn-big:hover {
+    background: #2d2b2c;
+    color: #ffffff;
+}
+
+.btn-big.btn-big__inset2 {
+    font: 300 14px/14px "Ubuntu", sans-serif;
+    letter-spacing: .06em;
+    color: #ffffff;
+    text-transform: uppercase;
+    background: #f05758;
+    padding: 19px 39px 17px;
+}
+
+.btn-big.btn-big__inset2:hover {
+    background: #2d2b2c;
+}
+
+/* ======= Wrappers ======= */
+.wrapper1 {
+    padding: 101px 0 40px;
+}
+
+.wrapper2 {
+    padding: 62px 0 0;
+}
+
+.wrapper3 {
+    padding-bottom: 31px;
+}
+
+.wrapper4 {
+    padding-top: 61px;
+}
+
+.wrapper5 {
+    padding-bottom: 37px;
+}
+
+.wrapper6 {
+    padding-bottom: 42px;
+}
+
+.wrapper7 {
+    padding-bottom: 52px;
+}
+
+.wrapper8 {
+    padding-bottom: 27px;
+}
+
+.border-wrapper1 {
+    border-bottom: 10px solid #f05758;
+    position: relative;
+}
+
+/* ======= Default font styles ======= */
+.time1 {
+    font: 300 9px/22px "Ubuntu", sans-serif;
+    color: #b1b1b1;
+    display: inline-block;
+    letter-spacing: 0.1em;
+}
+
+/*========================================================
+                    HEADER styles
+=========================================================*/
+#header .wrapper {
+    padding: 58px 0 71px;
+    position: relative;
+}
+
+#header.common {
+    position: relative;
+}
+
+#header.common:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 4px;
+    overflow: visible;
+    background: url(../images/page2_img1.png) no-repeat center 0;
+    background-size: cover;
+}
+
+#header.common h1 a {
+    padding: 34px 42px 35px;
+}
+
+@media (max-width: 767px) {
+    #header .wrapper {
+        padding: 0 0 20px;
+    }
+
+    #header.common h1 a {
+        padding: 6px;
+    }
+}
+
+/* ======= Logo ======= */
+h1 {
+    display: inline-block;
+    background: #f05758;
+    font: 700 30px/30px "Ubuntu", sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 200;
+    left: 0;
+    top: 0;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1 a {
+    padding: 69px 42px 72px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+}
+
+h1 a:hover {
+    color: #ffffff;
+}
+
+@media (max-width: 767px) {
+    h1 {
+        position: relative;
+        display: block;
+    }
+
+    h1 a {
+        padding: 6px;
+    }
+}
+
+/* ======= Main menu variables ======= */
+/* ======= Sub menus common variables ======= */
+/* ======= First level sub menu variables ======= */
+/* ======= Second level sub menu variables ======= */
+nav {
+    float: right;
+}
+
+/* Main menu styles
+========================================================*/
+.sf-menu a {
+    letter-spacing: 0.06em;
+}
+
+.sf-menu>li {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+    text-align: center;
+}
+
+.sf-menu>li+li {
+    margin-left: 50px;
+}
+
+@media (max-width: 979px) {
+    .sf-menu>li+li {
+        margin-left: 30px;
+    }
+}
+
+.sf-menu>li>.sf-with-ul:after {
+    font-family: FontAwesome;
+    font-size: 10px;
+    position: absolute;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    cursor: default;
+    content: "\f0d7";
+    color: #2d2b2c;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -3px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.sf-menu>li>a {
+    text-transform: uppercase;
+    font: 700 14px/16px "Ubuntu", sans-serif;
+    display: inline-block;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+    color: #2d2b2c;
+}
+
+.sf-menu>li>a:hover {
+    color: #f05758;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+}
+
+.sf-menu>li>a:active {
+    background: transparent;
+    color: #f05758;
+}
+
+.sf-menu .sfHover>a:after {
+    color: #f05758;
+}
+
+.sf-menu>li.current>a {
+    color: #f05758;
+}
+
+.sf-menu>li.current>.sf-with-ul:after {
+    color: #f05758;
+}
+
+.sf-menu>li.sfHover>a {
+    color: #f05758;
+}
+
+.sf-menu a {
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+}
+
+.sf-menu a:hover {
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+}
+
+/* First level sub-menu styles
+========================================================*/
+.sf-menu ul {
+    display: none;
+    min-width: 168px;
+    font: 700 14px/16px "Ubuntu", sans-serif;
+    position: absolute;
+    top: 71px;
+    left: -18px;
+    background: #f05758;
+    text-align: left;
+    padding: 39px 0 37px 18px;
+    z-index: 2;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.sf-menu ul>li+li {
+    margin-top: 9px;
+}
+
+.sf-menu ul li {
+    position: relative;
+    display: block;
+}
+
+.sf-menu ul li>.sf-with-ul:after {
+    font-family: FontAwesome;
+    font-size: 10px;
+    position: absolute;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    cursor: default;
+    content: "\f0da";
+    color: #ffffff;
+    bottom: -1px;
+    right: 15px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.sf-menu ul li a {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.sf-menu ul li a:hover {
+    color: #ffc7c7;
+}
+
+.sf-menu ul>.sfHover>a:after {
+    color: #ffc7c7;
+}
+
+.sf-menu ul li.sfHover>a {
+    color: #ffc7c7;
+}
+
+/* Second level sub-menu styles
+========================================================*/
+.sf-menu ul ul {
+    position: absolute;
+    top: -39px;
+    left: 150px;
+    margin-left: 0;
+    background: #ffc7c7;
+    z-index: 4;
+    text-align: left;
+}
+
+.sf-menu ul ul a:hover {
+    color: #f05758;
+}
+
+@media only screen and (max-width: 767px) {
+    .sf-menu {
+        display: none;
+    }
+
+    nav {
+        width: 100%;
+        float: none;
+    }
+
+    .select-menu {
+        border-radius: none;
+        display: block;
+        text-transform: capitalize;
+        float: none;
+        color: #f05758;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        background: #ffffff;
+        font: 22px/28px 700 14px/16px "Ubuntu", sans-serif;
+        text-align: left;
+        border: 1px solid #c1c1c1;
+        padding: 2px 0;
+        position: relative;
+    }
+
+    .select-menu option {
+        text-align: left;
+        position: relative;
+    }
+}
+
+/*Core variables and mixins*/
+/* Stuck menu styles
+========================================================*/
+#header .isStuck .wrapper {
+    padding: 7px 0 15px;
+}
+
+#header .isStuck h1 {
+    display: none;
+}
+
+#header .isStuck .sf-menu>li>.sf-with-ul:after {
+    bottom: -4px;
+}
+
+#header .isStuck .sf-menu ul {
+    top: 22px;
+}
+
+#header .isStuck .sf-menu ul ul {
+    top: -39px;
+}
+
+.isStuck {
+    z-index: 999;
+    position: fixed;
+    background: #FFF;
+    -webkit-box-shadow: 0 0 4px 0 #000000;
+    box-shadow: 0 0 4px 0 #000000;
+}
+
+.isStuck .wrapper {
+    padding: 10px 0;
+}
+
+@media only screen and (max-width: 979px) {
+    .isStuck {
+        display: none !important;
+    }
+}
+
+/*========================================================
+                    CONTENT styles
+=========================================================*/
+#content {
+    background: #ffffff;
+}
+
+#content.common {
+    padding-top: 59px;
+}
+
+/* ======= Post 1 After camera ======= */
+.post1 {
+    border-top: 19px solid #ffffff;
+    margin-top: -19px;
+    margin-bottom: 70px;
+    position: relative;
+    z-index: 200;
+}
+
+.post1 img {
+    margin-bottom: 9px;
+}
+
+.post1 time {
+    margin-bottom: 26px;
+}
+
+.post1 p {
+    color: #b1b1b1;
+}
+
+.post1 h3 {
+    margin-bottom: 8px;
+}
+
+.post1 .btn-simple {
+    margin-top: 22px;
+}
+
+.post1.post1__inset1 {
+    padding-bottom: 26px;
+    border-bottom: 1px solid #e1e2e3;
+    border-top: none;
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+.post1.post1__inset1 img {
+    margin-bottom: 12px;
+}
+
+.post1.post1__inset1 time {
+    margin-bottom: 0;
+}
+
+.post1.post1__inset1 h3 {
+    margin-top: -3px;
+    margin-bottom: 7px;
+}
+
+.post1.post1__inset1 p {
+    color: #595959;
+}
+
+.post1.post1__inset1.no-border {
+    border-bottom: 0;
+}
+
+@media (max-width: 767px) {
+    .post1 {
+        margin-top: 20px;
+    }
+
+    .post1 img {
+        width: 100%;
+    }
+
+    .post1.post1__inset1 {
+        border-bottom: none;
+    }
+}
+
+/* ======= Box 1  ======= */
+.box1 {
+    padding-left: 150px;
+    padding-bottom: 45px;
+    border-bottom: 1px solid #e1e2e3;
+    position: relative;
+    margin-bottom: 62px;
+}
+
+.box1 .label {
+    position: absolute;
+    left: 11px;
+    top: -8px;
+    text-align: center;
+    background: #f05758;
+    height: 111px;
+    width: 111px;
+    border-radius: 200px;
+}
+
+.box1 .label i {
+    line-height: 111px;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.box1 .label:after {
+    content: '';
+    width: 144px;
+    height: 32px;
+    display: block;
+    position: absolute;
+    background: url(../images/page1_img4.png) no-repeat center 0;
+    bottom: 0;
+    left: -11px;
+}
+
+.box1 p {
+    color: #b1b1b1;
+}
+
+.box1 h3 {
+    margin-bottom: 8px;
+}
+
+.box1 .btn-simple {
+    margin-top: 22px;
+}
+
+.box1:hover .label {
+    top: -18px;
+}
+
+.box1:hover .label:after {
+    bottom: -10px;
+    background: url(../images/page1_img4_hover.png) no-repeat center 0;
+}
+
+.box1.box1__inset1 {
+    border-bottom: none;
+    padding-bottom: 9px;
+}
+
+/* ======= Box 2 The best way to lose weight ======= */
+.box2 {
+    margin-top: 53px;
+    margin-bottom: 87px;
+}
+
+.box2 .vimeo-video1 {
+    margin-top: 12px;
+}
+
+.box2 h2 {
+    margin-bottom: 22px;
+    padding-right: 135px;
+}
+
+.box2 cite {
+    padding-right: 35px;
+    display: block;
+    margin-bottom: 18px;
+    font: italic 300 15px/22px "Ubuntu", sans-serif;
+    color: #9f9b9b;
+    letter-spacing: 0.04em;
+}
+
+.box2 p {
+    padding-right: 35px;
+    font: 400 19px/32px "Ubuntu", sans-serif;
+    color: #2d2b2c;
+}
+
+@media (max-width: 979px) {
+    .box2 h2 {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .box2 .vimeo-video1 {
+        margin-bottom: 20px;
+    }
+}
+
+/* ======= Post 2 New diets ======= */
+.post2 {
+    padding-bottom: 29px;
+    border-bottom: 1px solid #e1e2e3;
+    margin-bottom: 35px;
+}
+
+.post2 img {
+    margin-bottom: 17px;
+}
+
+.post2 h3 {
+    float: left;
+}
+
+.post2 time {
+    margin-top: 6px;
+    float: right;
+}
+
+.post2.post2__inset1 {
+    border-bottom: none;
+}
+
+@media (max-width: 767px) {
+    .post2 img {
+        width: 100%;
+    }
+
+    .post2 h3 {
+        float: none;
+    }
+
+    .post2 time {
+        float: none;
+    }
+}
+
+/* ======= Box 3 Who we are ======= */
+.box3 {
+    margin-bottom: 74px;
+}
+
+.box3 h3 {
+    margin-top: -4px;
+    margin-bottom: 16px;
+}
+
+.box3 .btn-simple {
+    margin-top: 24px;
+}
+
+.box3 .list1 {
+    margin-top: -2px;
+}
+
+.box3.box3__inset1 h3 {
+    margin-top: -3px;
+    margin-bottom: 6px;
+}
+
+.box3.box3__inset1 .btn-simple {
+    margin-top: 22px;
+}
+
+.box3.box3__offset1 {
+    margin-bottom: 37px;
+}
+
+.box3.box3__inset2 .btn-simple {
+    margin-top: 16px;
+}
+
+.box3.box3__offset2 {
+    margin-bottom: 32px;
+}
+
+@media (max-width: 767px) {
+    .box3 img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .box3 .list1 {
+        margin-top: 30px;
+    }
+}
+
+/* ======= Box 4 Fresh recipes ======= */
+.box4 a {
+    float: left;
+    margin-bottom: 3px;
+}
+
+.box4 a.center {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+@media (max-width: 1199px) {
+    .box4 a {
+        width: 50%;
+        margin-bottom: 0;
+    }
+
+    .box4 a img {
+        width: 100%;
+    }
+
+    .box4 a.center {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .box4 {
+        margin-bottom: 50px;
+    }
+}
+
+/* ======= Box 5 Diet secrets ======= */
+.box5 {
+    margin-top: -4px;
+    margin-bottom: 40px;
+}
+
+.box5 h3 {
+    margin-bottom: 16px;
+}
+
+.box5 p {
+    margin-bottom: 22px;
+}
+
+/* ======= Box 6 Our services ======= */
+.box6 {
+    margin-bottom: 82px;
+    padding: 43px 10px 66px 116px;
+    background: #f15c59;
+    position: relative;
+}
+
+.box6 .btn-simple {
+    margin-top: 7px;
+}
+
+.box6 h4 {
+    position: relative;
+    z-index: 2;
+}
+
+.box6 h4 a:hover {
+    color: #ffffff;
+}
+
+.box6 .btn-simple {
+    position: relative;
+    z-index: 2;
+}
+
+.box6 .btn-simple:hover {
+    color: #ffffff;
+}
+
+.box6 .label {
+    z-index: 1;
+    position: absolute;
+    left: -3px;
+    bottom: 33px;
+    font-size: 110px;
+    line-height: 22px;
+    color: #f58d8b;
+    font-weight: 700;
+    letter-spacing: -0.075em;
+}
+
+@media (max-width: 1199px) {
+    .box6 h4 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .box6 {
+        padding: 10px;
+    }
+
+    .box6 .label {
+        display: none;
+    }
+}
+
+@media (max-width: 479px) {
+    .box6 h4 {
+        font-size: 24px;
+        line-height: 24px;
+    }
+}
+
+/* ======= Box 7 Professional advice ======= */
+.box7 {
+    margin-top: -55px;
+}
+
+.box7 a {
+    display: block;
+    padding: 22px 20px 19px;
+    background: #f05758;
+}
+
+.box7 a:hover h5 {
+    color: #f7a9aa;
+}
+
+.box7 a:hover i {
+    color: #ffffff;
+}
+
+.box7 img {
+    width: 100%;
+}
+
+.box7 h5 {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    float: left;
+}
+
+.box7 i {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    float: right;
+    font-size: 30px;
+    line-height: 30px;
+    color: #f7a9aa;
+}
+
+/* ======= Box 8  ======= */
+.box8 {
+    margin-bottom: 34px;
+}
+
+.box8 img {
+    margin-bottom: 17px;
+}
+
+.box8 h3 {
+    margin-bottom: 15px;
+}
+
+.box8 .list1 {
+    margin-top: 19px;
+}
+
+.box8.box8__offset1 {
+    margin-top: -4px;
+}
+
+@media (max-width: 767px) {
+    .box8 img {
+        width: 100%;
+    }
+
+    .box8 .list1 {
+        margin-top: 30px;
+    }
+}
+
+/* ======= Box 9 + isotope items ======= */
+#filters {
+    margin-top: -5px;
+    margin-bottom: 24px;
+    /* ---- button-group ---- */
+}
+
+#filters .button {
+    display: inline-block;
+    background: transparent;
+    border: none;
+    color: #2d2b2c;
+    font: 300 16px/16px "Ubuntu", sans-serif;
+    cursor: pointer;
+}
+
+#filters .button:hover {
+    color: #f05758;
+}
+
+#filters .button:active,
+#filters .button.is-checked {
+    color: #f05758;
+    outline: none;
+}
+
+#filters .button.is-checked {
+    color: #f05758;
+}
+
+#filters .button:active {
+    color: #f05758;
+}
+
+#filters .button-group:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#filters .button-group .button {
+    float: left;
+    border-radius: 0;
+    margin-left: 0;
+    margin-right: 40px;
+    margin-bottom: 5px;
+}
+
+.isotope .element-item {
+    width: 370px;
+    float: left;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 1199px) {
+    .isotope .element-item {
+        width: 300px;
+    }
+}
+
+@media (max-width: 979px) {
+    .isotope .element-item {
+        width: 236px;
+    }
+}
+
+@media (max-width: 767px) {
+    .isotope .element-item {
+        width: 420px;
+    }
+}
+
+@media (max-width: 479px) {
+    .isotope .element-item {
+        width: 270px;
+    }
+}
+
+/* ======= Post 3 Blog ======= */
+.post3 {
+    margin-top: -5px;
+    margin-bottom: 47px;
+}
+
+.post3 .info {
+    font: 300 13px/24px "Ubuntu", sans-serif;
+    color: #696969;
+    margin-bottom: 24px;
+}
+
+.post3 .info .by {
+    color: #f05758;
+}
+
+.post3 .info .by:hover {
+    color: #2d2b2c;
+}
+
+.post3 h3 {
+    margin-top: -4px;
+    margin-bottom: 16px;
+}
+
+.post3 p {
+    margin-bottom: 22px;
+}
+
+@media (max-width: 767px) {
+    .post3 img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* ======= Box 10 Privacy Policy ======= */
+.box10 {
+    margin-bottom: 40px;
+    margin-top: -4px;
+}
+
+.box10 h3 {
+    margin-bottom: 16px;
+}
+
+.box10 .simple-link {
+    margin-top: 22px;
+    margin-bottom: -3px;
+}
+
+/* ======= Vimeo video  ======= */
+.vimeo-video1 iframe {
+    width: 100%;
+    height: 314px;
+}
+
+@media (max-width: 1199px) {
+    .vimeo-video1 iframe {
+        height: 257.92857142857144px;
+    }
+}
+
+@media (max-width: 979px) {
+    .vimeo-video1 iframe {
+        height: 204.1px;
+    }
+}
+
+@media (max-width: 767px) {
+    .vimeo-video1 iframe {
+        height: 235.5px;
+    }
+}
+
+@media (max-width: 479px) {
+    .vimeo-video1 iframe {
+        height: 151.39285714285714px;
+    }
+}
+
+/* ======= Google Map  ======= */
+.google-map_contacts iframe {
+    width: 100%;
+    height: 400px;
+}
+
+@media (max-width: 767px) {
+    .google-map_contacts iframe {
+        height: 200px;
+    }
+}
+
+/* ======= Address  ======= */
+.address-block {
+    margin-bottom: 38px;
+    margin-top: 23px;
+}
+
+@media (max-width: 767px) {
+    .address-block {
+        margin-bottom: 50px;
+    }
+}
+
+.address-block address {
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.address-block .our-address {
+    display: block;
+    margin-bottom: 21px;
+    font: 700 16px/20px "Ubuntu", sans-serif;
+    color: #2d2b2c;
+}
+
+.address-block .numbers {
+    display: inline-block;
+    min-width: 75px;
+}
+
+/* ======= Simple link ======= */
+.simple-link {
+    display: inline-block;
+    text-decoration: underline;
+    color: #f05758;
+}
+
+.simple-link:hover {
+    color: #2d2b2c;
+}
+
+/* ======= List 1 ======= */
+.list1 li {
+    padding-left: 20px;
+    position: relative;
+    font: 300 14px/14px "Ubuntu", sans-serif;
+    color: #595959;
+    letter-spacing: 0.04em;
+}
+
+.list1 li:before {
+    font-family: FontAwesome;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    cursor: default;
+    line-height: 14px;
+    content: '\f0a9';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #f05758;
+}
+
+.list1 li+li {
+    margin-top: 14px;
+}
+
+/* ======= Social buttons 1 ======= */
+.socials1 li {
+    display: inline-block;
+    margin-bottom: 2px;
+    border-radius: 200px;
+}
+
+.socials1 li a {
+    border-radius: 200px;
+}
+
+.socials1 li a i {
+    color: #ffffff;
+    background: #f05758;
+    text-align: center;
+    font-size: 17px;
+    display: block;
+    width: 47px;
+    height: 47px;
+    line-height: 49px;
+    border-radius: 200px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.socials1 li a i:hover {
+    background: #2d2b2c;
+}
+
+/* ======= Gallery  ======= */
+.gallery_image a {
+    display: block;
+    position: relative;
+    background: #3b3b3b;
+}
+
+.gallery_image a img {
+    margin-bottom: 0;
+}
+
+@media (max-width: 979px) {
+    .gallery_image a img {
+        width: 100%;
+    }
+}
+
+.gallery_image a:hover img {
+    opacity: 0.34;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=34)";
+}
+
+.gallery_image a:hover .gallery_icon {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.gallery_image a img {
+    opacity: 1;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.gallery_image a .gallery_icon {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    width: 29px;
+    height: 29px;
+    position: absolute;
+    display: block;
+    left: 50%;
+    margin-left: -14.5px;
+    top: 50%;
+    margin-top: -14.5px;
+    background: url(../images/hover_icon.png) no-repeat center;
+}
+
+/*========================================================
+                    FOOTER styles
+=========================================================*/
+#footer {
+    border-top: 1px solid #e1e1e1;
+    margin-top: -1px;
+    padding: 50px 0;
+    font: 300 10px/16px "Ubuntu", sans-serif;
+    color: #b6b5b5;
+    text-transform: uppercase;
+}
+
+#footer .privacy {
+    color: #2d2b2c;
+}
+
+#footer .privacy:hover {
+    color: #f05758;
+}
+
+#footer address span {
+    letter-spacing: 0.04em;
+}
+
+#footer .location {
+    margin-bottom: 8px;
+}
+
+#footer .location span {
+    display: block;
+}
+
+#footer .phone span {
+    font: 300 19px/26px "Ubuntu", sans-serif;
+    color: #2d2b2c;
+    letter-spacing: 0.04em;
+}
+
+#footer .socials1 {
+    margin-top: 23px;
+}
+
+/*========================================================
+                    Widget styles
+=========================================================*/
+/* UItoTop styles
+========================================================*/
+#toTop {
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    overflow: hidden;
+    border: none;
+    color: #fff;
+    font-size: 0;
+    line-height: 38px;
+    z-index: 20;
+    width: 14px;
+    height: 34px;
+    background: url(../images/totop.png) no-repeat center 0;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#toTop:hover {
+    outline: none;
+    color: #f0f0f0;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+@media only screen and (max-width: 1199px) {
+    #toTop {
+        display: none !important;
+    }
+}
+
+/*Core variables and mixins*/
+
+
+.justify {
+    text-align: justify;
+}
+
+.justify h2,
+h3,
+h4,
+h5 {
+    padding: 0 0 20px 0;
+    font-weight: bold;
+}
+
+.justify img {
+    width: 100%;
+    margin: 0 0 20px 0;
+}
+
+.justify p {
+    line-height: 28px;
+    padding: 0 0 20px 0;
+}
+
+.justify h3 {
+    font-size: 28px;
+    line-height: 28px;
+    padding-top: 20px;
+}
+
+.justify h4 {
+    font-size: 24px;
+    line-height: 26px;
+    padding-top: 20px;
+}
+
+.justify ul {
+    padding: 0 0 20px 0;
+}
+
+.justify ul li {
+    list-style: circle;
+    list-style-type: disc;
+    list-style-position: outside;
+    font-size: 18px;
+    margin-left: 20px;
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contacte</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact-form.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="js/TMForm.js"></script>
+    <script src="js/modal.js"></script>
+    <!--[if (gt IE 9)|!(IE)]><!-->
+    <script src="js/wow/wow.js"></script>
+    <script>
+        $(document).ready(function () {
+            if ($('html').hasClass('desktop')) {
+                new WOW().init();
+            }
+        });
+    </script>
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+  <div id="ie6-alert" style="width: 100%; text-align:center;">
+    <img src="http://beatie6.frontcube.com/images/ie6.jpg" alt="Upgrade IE 6" width="640" height="344" border="0" usemap="#Map" longdesc="http://die6.frontcube.com" />
+    <map name="Map" id="Map"><area shape="rect" coords="496,201,604,329" href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target="_blank" alt="Download Interent Explorer" /><area shape="rect" coords="380,201,488,329" href="http://www.apple.com/safari/download/" target="_blank" alt="Download Apple Safari" /><area shape="rect" coords="268,202,376,330" href="http://www.opera.com/download/" target="_blank" alt="Download Opera" /><area shape="rect" coords="155,202,263,330" href="http://www.mozilla.com/" target="_blank" alt="Download Firefox" />
+      <area shape="rect" coords="35,201,143,329" href="http://www.google.com/chrome" target="_blank" alt="Download Google Chrome" />
+    </map>
+  </div>
+  <![endif]-->
+</head>
+
+
+<body>
+
+    <!--========================================================
+                          HEADER
+=========================================================-->
+    <header id="header" class="common">
+        <div id="stuck_container">
+            <div class="container">
+                <div class="row">
+                    <div class="grid_12">
+                        <div class="wrapper">
+                            <h1>
+                                <a href="index.html">
+                                    We<br>loss
+                                </a>
+                            </h1>
+                            <nav>
+                                <ul class="sf-menu">
+                                    <li class="current"><a href="index.html">Acasă</a></li>
+                                    <li><a href="contact.html">Despre</a></li>
+                                    <li><a href="contact.html">Servicii</a></li>
+                                    <li><a href="contact.html">Galerie</a></li>
+                                    <li><a href="contact.html">Blog</a></li>
+                                    <li><a href="contact.html">Contacte</a></li>
+                                </ul>
+                                <div class="clearfix"></div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!--========================================================
+                          CONTENT
+=========================================================-->
+    <section id="content" class="common">
+        <div class="wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="grid_12">
+                        <div class="border-wrapper1 wrapper6">
+                            <div class="row">
+                                <div class="grid_6">
+                                    <div class="heading1">
+                                        <h2>Informatii</h2>
+                                    </div>
+                                    <div class="google-map_contacts wow fadeIn">
+                                        <iframe
+                                            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Strada%20Principatele%20Unite%2033-35,%20Bucure%C8%99ti%20030167,%20Romania+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                                                href="https://www.maps.ie/distance-area-calculator.html"
+                                                style="border:0"></iframe>
+                                    </div>
+                                    <div class="address-block">
+                                        <address>
+                                            <span class="our-address">Strada Principatele Unite 33-35,<br> București
+                                                030167, Romania</span>
+                                            <span class="numbers telephone">Telefon:
+                                            </span><span>+40729693976</span><br>
+                                        </address>
+                                    </div>
+                                </div>
+                                <div class="grid_6">
+                                    <div class="heading1">
+                                        <h2>Formular de contact</h2>
+                                    </div>
+                                    <form id="contact-form">
+                                        <div class="contact-form-loader"></div>
+                                        <fieldset>
+                                            <div class="row">
+                                                <div class="grid_5">
+                                                    <label class="name">
+                                                        <input type="text" name="name" placeholder="Nume:*"
+                                                            data-constraints="@Required @JustLetters" />
+                                                        <span class="empty-message">*Acest câmp este obligatoriu.</span>
+                                                    </label>
+                                                    <label class="email">
+                                                        <input type="text" name="email" placeholder="Email:*" value=""
+                                                            data-constraints="@Required @Email" />
+                                                        <span class="empty-message">*Acest câmp este obligatoriu.</span>
+                                                        <span class="error-message">*Acesta nu este un e-mail
+                                                            valid.</span>
+                                                    </label>
+                                                    <label class="phone">
+                                                        <input type="text" name="phone" placeholder="Telefon:*" value=""
+                                                            data-constraints="@Required @JustNumbers" />
+                                                        <span class="empty-message">*Acest câmp este obligatoriu.</span>
+                                                        <span class="error-message">*Acesta nu este un e-mail
+                                                            valid.</span>
+                                                    </label>
+                                                </div>
+                                                <div class="grid_4">
+
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="grid_6">
+                                                    <label class="message">
+                                                        <textarea name="message" placeholder="Mesaj:"
+                                                            data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+                                                        <span class="empty-message">*Acest câmp este obligatoriu.</span>
+                                                        <span class="error-message">*Acesta nu este un e-mail
+                                                            valid.</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <!-- <label class="recaptcha"><span class="empty-message">*This field is required.</span></label> -->
+                                            <div class="contact-form-buttons">
+                                                <a href="#" data-type="submit"
+                                                    class="btn-big btn-big__inset2">Trimite</a>
+                                            </div>
+                                        </fieldset>
+                                        <div class="modal fade response-message">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-hidden="true">&times;</button>
+                                                        <h4 class="modal-title">Titlul modal</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        Mesajul tau a fost trimis! Vom lua legătura în curând.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--========================================================
+                          FOOTER
+=========================================================-->
+    <footer id="footer" class="wow fadeIn">
+        <div class="wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="grid_6">
+                        <div class="privacy-block">
+                            <a href="index.html" class="main">weloss</a> &copy; <span id="copyright-year"></span> •
+                            <a href="index.html" class="privacy">Politica de confidențialitate</a>
+                        </div>
+                    </div>
+                    <div class="grid_3">
+                        <address class="location">
+                            <span>Strada Principatele Unite 33-35, </span>
+                            <span>București 030167, Romania</span>
+                        </address>
+                        <address class="phone">
+                            <span>Telefon: +40729693976</span>
+                        </address>
+                    </div>
+                    <div class="grid_3">
+                        <ul class="socials1">
+                            <li>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-rss"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-pinterest"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
