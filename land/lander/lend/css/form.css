@@ -1,0 +1,359 @@
+.form_item {
+  position: relative;
+  width: 100%;
+  padding: 38px 18px;
+  background: #9450f2;
+  border: 2px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(17.5px);
+  border-radius: 15px;
+  z-index: 1;
+}
+.form_title {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 47px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+.form_subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.preloader {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: #ffffff;
+  background-image: url(../images/preloader.gif);
+  border-radius: 20px;
+  opacity: 0.5;
+  z-index: 10;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.input_wrapper {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.form_input {
+  width: 100%;
+  font-size: 18px;
+  line-height: 22px;
+  color: #0f1719;
+  outline: none;
+  background: #ffffff;
+  border: none;
+  border-radius: 15px;
+  padding: 18px 46px 18px 14px;
+  transition: all 0.3s ease-in-out;
+}
+.intl-tel-input .selected-flag::after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 21px;
+  background: #0f1719;
+  margin-left: 10px;
+}
+/* .intl-tel-input .selected-flag.error::after {
+  background: #c8102e;
+}
+.intl-tel-input .selected-flag.valid::after {
+  background: #10b534;
+} */
+.country-list {
+  color: #0f1719;
+  z-index: 5 !important;
+}
+.intl-tel-input.separate-dial-code .selected-dial-code {
+  font-size: 18px;
+  color: #0f1719;
+}
+.intl-tel-input .selected-flag .iti-arrow {
+  border-top: 4px solid #0f1719;
+}
+
+.form_input::placeholder {
+  color: #0f1719;
+}
+
+.input_icon {
+  position: absolute;
+  top: calc(50% - 8px);
+  left: 18px;
+}
+
+label.error {
+  position: absolute;
+  transform-style: preserve-3d;
+  width: calc(100% - 20px);
+  margin-left: 10px;
+  font-size: 14px;
+  line-height: 18px;
+  border-radius: 5px;
+  background: #e44545;
+  color: #ffffff;
+  max-width: 320px;
+  padding: 6px;
+  z-index: 3;
+  left: 0;
+  top: 70px;
+}
+
+label.error::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #e44545;
+  border-radius: 2px;
+  transform: translateZ(-1px) rotate(45deg);
+  top: -5px;
+  left: 17px;
+  transform-style: preserve-3d;
+}
+
+.form_input.error {
+  background: linear-gradient(0deg, rgba(255, 0, 0, 0.15), rgba(255, 0, 0, 0.15)), #ffffff;
+}
+
+/* .form_input.error.form_input::placeholder {
+  color: #c8102e;
+} */
+
+.form_input.error ~ .input_icon {
+  filter: invert(60%) sepia(91%) saturate(6844%) hue-rotate(17deg) brightness(94%) contrast(120%);
+}
+
+.form_input.valid {
+  background: linear-gradient(0deg, rgba(5, 225, 0, 0.15), rgba(5, 225, 0, 0.15)), #ffffff;
+}
+
+/* .form_input.valid.form_input::placeholder {
+  color: #10b534;
+} */
+
+.form_input.valid ~ .input_icon {
+  filter: invert(75%) sepia(95%) saturate(1659%) hue-rotate(62deg) brightness(77%) contrast(101%);
+}
+
+.passWrp {
+  display: flex;
+}
+.form--control-password {
+  border-right: none !important;
+  border-radius: 5px 0px 0px 5px;
+}
+.form--control-password.error {
+  background: #fff;
+}
+.form--control-password.error ~ .getNewPass {
+  border: 1px solid #e44545;
+  border-left: none;
+}
+.form--control-password.valid ~ .getNewPass {
+  background: #e8f0fe;
+  border: 1px solid #c6c6c6;
+  border-left: none;
+}
+
+.getNewPass {
+  background: #ffffff;
+  border-radius: 0px 4px 4px 0px;
+  padding: 0 15px;
+  font-size: 12px;
+  line-height: 15px;
+  width: calc(100% + 1px);
+  margin-left: -1px;
+  max-width: 134px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  color: #000;
+}
+
+.form_submit {
+  margin: 25px 0 20px;
+  background: #f2785c;
+  border-radius: 15px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  border: none;
+  padding: 19.5px;
+  text-align: center;
+  width: 100%;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+.form_submit:hover {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), #f2785c;
+}
+.form_submit:active {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), #f2785c;
+}
+.checkbox-svg {
+  justify-content: flex-start !important;
+  margin-bottom: 0 !important;
+}
+
+.checked-svg svg {
+  border-radius: 2px !important;
+  stroke: transparent !important;
+}
+
+#cbx:checked + .checked-svg svg {
+  stroke: #fff !important;
+}
+
+#cbx-3:checked + .checked-svg svg {
+  stroke: #fff !important;
+}
+.checkbox-svg label.checked-svg {
+  background-color: #f2785c !important;
+  border-radius: 3px;
+}
+.privacy-checkbox {
+  padding-top: 0 !important;
+}
+.privacy-checkbox p {
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+}
+.privacy-checkbox p a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.checkbox-svg label.checked-svg {
+  height: 20px !important;
+}
+#password2-error {
+  display: none !important;
+}
+.valid-block {
+  position: absolute;
+  background: #fafaff;
+  border: 1px solid #ff003c;
+  box-sizing: border-box;
+  z-index: 99;
+  top: 45px;
+  padding: 5px 0;
+  width: 100%;
+}
+
+.valid-check {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.valid-check label {
+  color: #f90201;
+  padding: 5px 25px;
+  position: relative;
+  text-align: left;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 1;
+  margin: 0;
+}
+
+.valid-check label::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  width: 12px;
+  height: 11px;
+  /* background-image: url(../images/form-invalid.svg); */
+  background-size: 80%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.valid-check.check label {
+  color: #39b54a !important;
+}
+
+.valid-check.check label::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  width: 12px;
+  height: 11px;
+  z-index: 3;
+  /* background-image: url(../images/valid-input.png); */
+  background-size: 80%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+@media (max-width: 767px) {
+  .form_item {
+    max-width: 360px;
+    margin: 0 auto;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(9.5px);
+    border-radius: 8px;
+    padding: 21px 10px 15px;
+  }
+  .form_title {
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 21px;
+  }
+  .input_wrapper {
+    margin-bottom: 8px;
+  }
+  .form_input {
+    padding: 7px 45px 7px 8px;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  label.error {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 4px;
+    top: 36px;
+  }
+  .intl-tel-input.separate-dial-code .selected-dial-code {
+    font-size: 12px;
+  }
+  .form_submit {
+    margin: 14px 0 10px;
+    font-size: 18px;
+    line-height: 22px;
+    border-radius: 8px;
+    padding: 6.5px;
+  }
+  .privacy-checkbox p {
+    font-size: 8px;
+    line-height: 10px;
+  }
+  .checkbox-svg label.checked-svg {
+    width: 10px !important;
+    height: 10px !important;
+  }
+  .checked-svg svg {
+    width: 10px;
+    height: 10px;
+    display: grid;
+    place-items: center;
+  }
+
+}
