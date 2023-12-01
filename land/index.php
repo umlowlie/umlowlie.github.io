@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Millionaire Fastlane</title>
-    <link rel="icon" type="icon" href="lander/lend/images/Favicon.ico" />
+    <link rel="icon" type="icon" href="lander/lend/images/favicon.ico" />
 
     <link rel="stylesheet" href="lander/lend/css/fonts.css" />
     <link rel="stylesheet" href="lander/lend/css/index.css" />

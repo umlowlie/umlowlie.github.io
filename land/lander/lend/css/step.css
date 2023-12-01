@@ -1,7 +1,7 @@
 .step {
   padding: 100px 0;
   color: #fff;
-  background: #261440;
+  background: #0c101b;
   margin: 0 auto;
 }
 
@@ -33,7 +33,7 @@
 }
 .step_itemWrp.active {
   opacity: 1;
-  background: rgba(241, 119, 91, 0.15);
+  background: #111825;
   border-radius: 0px 15px 15px 0px;
 }
 .step_separator {
@@ -42,7 +42,7 @@
   background: #fff;
 }
 .active .step_separator {
-  background: #f1775b;
+  background: #d1ad58;
 }
 .step_inner {
   position: relative;
@@ -50,7 +50,7 @@
   padding: 25px;
 }
 .active .step_inner::before {
-  background: #f1775b;
+  background: #d1ad58;
 }
 .step_inner::before {
   position: absolute;
@@ -71,7 +71,7 @@
   color: #fff;
 }
 .active .step_counter {
-  color: #f1775b;
+  color: #d1ad58;
 }
 
 .step_title {
