@@ -8,8 +8,7 @@ const APP_BASE_PATH = basename(process.env.GITHUB_REPOSITORY || '')
 
 export default defineConfig({
   outDir: '../dist',
-//   base: APP_BASE_PATH ? `/${APP_BASE_PATH}/` : '/',
-   base: `/m1690/`,
+   base: APP_BASE_PATH ? `/${APP_BASE_PATH}/` : '/',
 
   lang: 'ru-RU',
   title: 'M1690',
